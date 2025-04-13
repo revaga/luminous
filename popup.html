@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>20-20-20 Timer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      width: 250px;
+      padding: 15px;
+    }
+    #timer {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+    #phase-message {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    
+  button {
+    margin: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #357bd8;
+  }
+  
+  </style>
+</head>
+<body>
+  <div id="timer">00:00</div>
+  <div id="phase-message">ready</div>
+  <div>
+    <button id="startStop">start</button>
+    <button id="restart">reset</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
