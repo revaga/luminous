@@ -15,7 +15,7 @@ function notifyPhaseChange() {
     iconUrl: "icon.png",
     title,
     message,
-    priority: 2
+    priority: 1
   });
 
   // Badge
