@@ -22,6 +22,8 @@ chrome.runtime.onMessage.addListener((msg) => {
 
 startStopBtn.addEventListener("click", () => {
   chrome.runtime.sendMessage({ command: startStopBtn.textContent.toLowerCase() });
+  if(startStopBtn.textContent === "start") startStopBtn.textContent = "stop";
+  else startStopBtn.textContent = "start";
 });
 
 restartBtn.addEventListener("click", () => {
